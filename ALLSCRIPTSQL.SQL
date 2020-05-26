@@ -64,9 +64,12 @@ DROP TABLE PS_DW.appliance;
 CREATE TABLE PS_DW.appliance(
 appliance_id INT NOT NULL auto_increment,
 appliance_name VARCHAR(100) NOT NULL,
-labour_cost INT NOT NULL,
 PRIMARY KEY(appliance_id)
 );
+
+ALTER TABLE PS_DW.appliance
+
+ADD labour_cost INT NOT NULL; 
 
 SELECT * FROM PS_DW.appliance;
 
