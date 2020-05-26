@@ -88,6 +88,16 @@ select * from PS_DW.customer;--Run this to see the data in customer which is ins
 insert into PS_DW.engineer(engineer_id,engineer_name) values (1,'Kaila Goodrow');
 select * from PS_DW.engineer;--Run this to see the data in engineer which is inserted
 
+
+/*************************UPDATE Scripts*****************/
+update ps_dw.customer set customer_name='Lee Chen' where customer_id=1
+
+select * from ps_dw.customer
+
+update ps_dw.engineer set engineer_name='Raghav kondapalli' where engineer_id=1
+
+select * from ps_dw.engineer
+
 /***************DELETE SCRIPTS***************************/
 
 -- delete from CUSTOMER
